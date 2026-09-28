@@ -5,20 +5,20 @@
 class Ccbar < Formula
   desc "A beautifully designed status line for Claude Code"
   homepage "https://github.com/oaooao/ccbar"
-  version "0.4.1"
+  version "0.5.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/oaooao/ccbar/releases/download/v0.4.1/ccbar_0.4.1_darwin_amd64.tar.gz"
-      sha256 "bf5f1718f3082b49e4775bdf805da2a6697cc3247653a5f477d309be33e41a9e"
+      url "https://github.com/oaooao/ccbar/releases/download/v0.5.0/ccbar_0.5.0_darwin_amd64.tar.gz"
+      sha256 "29d4f76d27a87b77ebecef46c6555772749330d7e18cf38a1afee940e3dbd3ba"
 
       define_method(:install) do
         bin.install "ccbar"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/oaooao/ccbar/releases/download/v0.4.1/ccbar_0.4.1_darwin_arm64.tar.gz"
-      sha256 "87f88297886a473f07f437fbb9af2ae5d483ff59348fdee26d7a173b967e490d"
+      url "https://github.com/oaooao/ccbar/releases/download/v0.5.0/ccbar_0.5.0_darwin_arm64.tar.gz"
+      sha256 "f3bfee9c407481dfc8013c31ed1adc71ec9aeeba0f1603d352c8b74557a0a2e1"
 
       define_method(:install) do
         bin.install "ccbar"
@@ -28,15 +28,15 @@ class Ccbar < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/oaooao/ccbar/releases/download/v0.4.1/ccbar_0.4.1_linux_amd64.tar.gz"
-      sha256 "7c91beb8023b5bb33889d5b945bc88f5160408fcc5d2b60e7b5ab54b56d0de46"
+      url "https://github.com/oaooao/ccbar/releases/download/v0.5.0/ccbar_0.5.0_linux_amd64.tar.gz"
+      sha256 "29186e38b259ce90aae2212e17d295f9810abb96a0f1e0a7f9a7b91a86a75149"
       define_method(:install) do
         bin.install "ccbar"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/oaooao/ccbar/releases/download/v0.4.1/ccbar_0.4.1_linux_arm64.tar.gz"
-      sha256 "3be16f3d14612612b7b5ce5761b3aabc5f779e28a23bd5b14c9fe54e287c4691"
+      url "https://github.com/oaooao/ccbar/releases/download/v0.5.0/ccbar_0.5.0_linux_arm64.tar.gz"
+      sha256 "28ca75512fed3b11192e6dd908924600e4f7d007a84d96c9eacb8f4565afe412"
       define_method(:install) do
         bin.install "ccbar"
       end
